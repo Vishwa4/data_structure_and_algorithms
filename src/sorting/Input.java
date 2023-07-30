@@ -9,7 +9,7 @@ public class Input {
         return new int[]{5, 6, 1, 0, 3};
     }
 
-    public void print(int[] array, String str, Instant start, Instant end){
+    public static void print(int[] array, String str, Instant start, Instant end){
         if(start != null && end !=null){
             Duration timeElapsed = Duration.between(start, end);
             System.out.println("Time taken: "+ timeElapsed.toMillis() +" milliseconds");
